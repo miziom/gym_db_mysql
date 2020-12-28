@@ -35,7 +35,7 @@ DO
 		"' FIELDS TERMINATED BY ',' 
 		OPTIONALLY ENCLOSED BY '\"'
 		FROM gyms.address;");
-	-- przygotowanie i egzekucja wytworoznego polecenia
+	-- preparation and execution of the command generated
 	prepare ADDRESS_prepere from @ADDRESS;
 	execute ADDRESS_prepere;
 	deallocate prepare ADDRESS_prepere;
